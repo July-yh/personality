@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="July-yh 的个人网站：研究、经历、写作与项目。" />
+    <title>July-yh · Personal Website</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site-config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳转到正文</a>
+
+    <main class="site" id="content">
+      <header class="profile-header">
+        <div class="portrait-wrap">
+          <div class="portrait-fallback" id="portraitFallback" aria-hidden="true">J</div>
+          <img class="portrait" id="portrait" alt="July-yh 的头像" width="132" height="164" hidden />
+        </div>
+        <div class="intro">
+          <h1><span id="displayName">July-yh</span><span class="name-cn" id="chineseName" hidden></span></h1>
+          <p id="introLead">这里记录我的研究兴趣、技术实践与公开项目。</p>
+          <p id="introDetail">个人资料正在整理中；目前可以先从下方的 GitHub 项目了解我的工作。</p>
+          <div class="top-links"><a id="topGitHub" href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#projects">Projects</a></div>
+        </div>
+      </header>
+
+      <section aria-labelledby="research-heading">
+        <h2 id="research-heading">Research Interests <span>研究方向</span></h2>
+        <p id="researchText" class="placeholder">研究方向与申请主题待补充。</p>
+      </section>
+
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience <span>教育与经历</span></h2>
+        <ol class="timeline" id="experienceList">
+          <li class="empty-row"><time>待补充</time><div><h3>教育与研究经历</h3><p>这里会列出学校、研究经历与相关工作。</p></div></li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="projects-heading" id="projects">
+        <h2 id="projects-heading">Writing &amp; Projects <span>文章与项目</span></h2>
+        <p class="section-note">公开项目从 <a id="projectGitHub" href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">GitHub</a> 自动读取。</p>
+        <div id="projectsStatus" class="status" role="status" aria-live="polite">正在读取公开项目…</div>
+        <div id="projectGroups" aria-live="polite"></div>
+        <div class="writing-block"><h3>Writing</h3><p id="writingText" class="placeholder">文章与论文待补充。</p></div>
+      </section>
+
+      <section aria-labelledby="about-heading" class="about-section">
+        <h2 id="about-heading">About Me <span>联系信息</span></h2>
+        <dl class="details">
+          <dt>GitHub</dt><dd><a id="contactGitHub" href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">July-yh</a></dd>
+          <dt>Email</dt><dd id="emailValue" class="placeholder">待补充</dd>
+          <dt>Location</dt><dd id="locationValue" class="placeholder">待补充</dd>
+        </dl>
+      </section>
+
+      <footer><span>Last updated <time id="updatedDate">Nov 2026</time></span><a href="#content">Back to top</a></footer>
+    </main>
+  </body>
+</html>
