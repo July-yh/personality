@@ -1,6 +1,6 @@
 # 赵一红 / Yihong Zhao
 
-赵一红 / Yihong Zhao 的双语学术网站。中文版为 `dist/index.html`，英文版为 `dist/en/index.html`。设计参考了 [jay-waves.cn](https://jay-waves.cn/) 的简约学术主页布局，页面代码与文案独立编写。
+赵一红 / Yihong Zhao 的双语学术网站。中文版为 `dist/index.html`，英文版为 `dist/en/index.html`。采用简约学术主页布局，页面代码与文案独立编写。
 
 ## 本地预览
 
