@@ -4,60 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="July-yh 的个人网站：研究、经历、写作与项目。" />
-    <title>July-yh · Personal Website</title>
+    <meta name="description" content="赵一红的个人学术网站。研究交通 GeoAI、时空数据建模与城市出行安全。" />
+    <title>赵一红 · Yihong Zhao</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="site-config.js" defer></script>
-    <script src="app.js" defer></script>
+    <link rel="alternate" hreflang="zh-CN" href="./" />
+    <link rel="alternate" hreflang="en" href="en/" />
   </head>
   <body>
     <a class="skip-link" href="#content">跳转到正文</a>
-
     <main class="site" id="content">
+      <nav class="language-switch" aria-label="语言切换"><span aria-current="page">中文</span><span class="divider" aria-hidden="true">/</span><a href="en/" lang="en">English</a></nav>
+
       <header class="profile-header">
-        <div class="portrait-wrap">
-          <div class="portrait-fallback" id="portraitFallback" aria-hidden="true">J</div>
-          <img class="portrait" id="portrait" alt="July-yh 的头像" width="132" height="164" hidden />
-        </div>
+        <div class="portrait-wrap"><div class="portrait-monogram" role="img" aria-label="赵一红的姓名缩写">YZ</div></div>
         <div class="intro">
-          <h1><span id="displayName">July-yh</span><span class="name-cn" id="chineseName" hidden></span></h1>
-          <p id="introLead">这里记录我的研究兴趣、技术实践与公开项目。</p>
-          <p id="introDetail">个人资料正在整理中；目前可以先从下方的 GitHub 项目了解我的工作。</p>
-          <div class="top-links"><a id="topGitHub" href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#projects">Projects</a></div>
+          <h1><span>赵一红</span><span class="name-alt" lang="en">Yihong Zhao</span></h1>
+          <p>北京交通大学交通运输规划与管理硕士生，研究交通 GeoAI、时空数据建模与城市出行安全。</p>
+          <p>我关注如何用多源数据和可解释模型识别事故风险的空间差异，并将研究结果转化为更有针对性的交通安全决策。</p>
+          <div class="top-links"><a href="mailto:24120884@bjtu.edu.cn">邮箱</a><a href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">GitHub</a></div>
         </div>
       </header>
 
-      <section aria-labelledby="research-heading">
-        <h2 id="research-heading">Research Interests <span>研究方向</span></h2>
-        <p id="researchText" class="placeholder">研究方向与申请主题待补充。</p>
-      </section>
-
-      <section aria-labelledby="experience-heading">
-        <h2 id="experience-heading">Experience <span>教育与经历</span></h2>
-        <ol class="timeline" id="experienceList">
-          <li class="empty-row"><time>待补充</time><div><h3>教育与研究经历</h3><p>这里会列出学校、研究经历与相关工作。</p></div></li>
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">教育经历 <span lang="en">Education</span></h2>
+        <ol class="timeline">
+          <li><time>2024.09–至今</time><div><h3>北京交通大学</h3><p>交通运输规划与管理 · 硕士研究生</p><p class="subtle">GPA 3.78，专业前 15%</p></div></li>
+          <li><time>2020.09–2024</time><div><h3>长安大学</h3><p>交通工程（国际工程班） · 工学学士</p><p class="subtle">GPA 3.62，专业前 10%</p></div></li>
         </ol>
       </section>
 
+      <section aria-labelledby="research-heading">
+        <h2 id="research-heading">研究方向 <span lang="en">Research Interests</span></h2>
+        <p>我的研究聚焦交通安全中的空间异质性与长尾风险预测，结合 GeoAI、空间加权模型、Tweedie-LightGBM 和 SHAP，分析建成环境、交通暴露及电动化基础设施对事故风险的影响。</p>
+      </section>
+
+      <section aria-labelledby="publications-heading">
+        <h2 id="publications-heading">论文与报告 <span lang="en">Publications</span></h2>
+        <h3 class="post-year">2026</h3>
+        <ul class="publications">
+          <li><a href="https://doi.org/10.1016/j.aap.2026.108647" target="_blank" rel="noopener noreferrer" lang="en">Multi-scale modeling of electric vehicle fatal crash risk: uncovering spatial heterogeneity and infrastructure-land use coupling mechanisms</a><p>赵一红等 · <cite>Accident Analysis &amp; Prevention</cite>, 236, 108647</p></li>
+          <li><a href="https://doi.org/10.12141/j.issn.1000-565X.250379" target="_blank" rel="noopener noreferrer">基于 ST-ANKDE 的电动汽车交通事故时空多发点鉴别</a><p>董春娇、陆江林、王含一、王水银、杨妙妍、赵一红等 · <cite>华南理工大学学报（自然科学版）</cite>, 2026(9): 72–81</p></li>
+        </ul>
+      </section>
+
       <section aria-labelledby="projects-heading" id="projects">
-        <h2 id="projects-heading">Writing &amp; Projects <span>文章与项目</span></h2>
-        <p class="section-note">公开项目从 <a id="projectGitHub" href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">GitHub</a> 自动读取。</p>
-        <div id="projectsStatus" class="status" role="status" aria-live="polite">正在读取公开项目…</div>
-        <div id="projectGroups" aria-live="polite"></div>
-        <div class="writing-block"><h3>Writing</h3><p id="writingText" class="placeholder">文章与论文待补充。</p></div>
+        <h2 id="projects-heading">研究与项目 <span lang="en">Research &amp; Projects</span></h2>
+        <ol class="timeline projects">
+          <li><time>2026–至今</time><div><h3>电动汽车事故风险的周度预测与差异化治理</h3><p>硕士学位论文。针对稀疏、长尾事故分布，构建滚动 Tweedie-LightGBM 模型，结合邻域历史风险与局部解释，评估高风险区域识别能力。</p></div></li>
+          <li><time>2026–至今</time><div><h3>城市交通事故风险分析智能体</h3><p>整合街道级事故数据、空间风险预测、局部 SHAP 解释与知识库，支持自然语言查询、多区域比较、高风险筛查和可解释报告生成。</p></div></li>
+          <li><time>2025–2026</time><div><h3>电动汽车致命事故风险的多尺度 GeoAI 建模</h3><p>构建多尺度自适应带宽地理加权随机森林（MSAB-GWRF）与空间加权 SHAP 框架，研究风险因素的非线性作用和空间差异；成果发表于 <cite>Accident Analysis &amp; Prevention</cite>。</p></div></li>
+        </ol>
       </section>
 
-      <section aria-labelledby="about-heading" class="about-section">
-        <h2 id="about-heading">About Me <span>联系信息</span></h2>
-        <dl class="details">
-          <dt>GitHub</dt><dd><a id="contactGitHub" href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">July-yh</a></dd>
-          <dt>Email</dt><dd id="emailValue" class="placeholder">待补充</dd>
-          <dt>Location</dt><dd id="locationValue" class="placeholder">待补充</dd>
-        </dl>
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">实习经历 <span lang="en">Experience</span></h2>
+        <ol class="timeline">
+          <li><time>2026.06–2026.08</time><div><h3>路凯智行 · 数据挖掘与分析工程师</h3><p>参与矿区无人驾驶车辆的运营数据建模与行为分析，开发 Python 数据清洗、事件匹配和指标统计工具，支持运营效率与异常事件分析。</p></div></li>
+          <li><time>2026.05–2026.06</time><div><h3>PNDbotics · 产品经理助理实习生</h3><p>参与机器人产品的客户交付与技术支持，梳理遥操作、SDK 与二次开发相关问题，并建设产品说明、FAQ 和排障文档。</p></div></li>
+          <li><time>2025.08–2026.03</time><div><h3>北京数原数字化城市研究中心 · 时空算法研究员</h3><p>参与北京西站行人目的地预测、人群与车流仿真，以及基于 SUMO–TraCI 的路网调度分析；另构建展会客流的实时监测指标与统计流程。</p></div></li>
+        </ol>
       </section>
 
-      <footer><span>Last updated <time id="updatedDate">Nov 2026</time></span><a href="#content">Back to top</a></footer>
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">技能 <span lang="en">Skills</span></h2>
+        <dl class="details skills"><dt>编程与数据</dt><dd>Python、SQL、Pandas、GeoPandas</dd><dt>建模方法</dt><dd>空间统计、随机森林、LightGBM、SHAP、时空建模</dd><dt>专业工具</dt><dd>ArcGIS、SUMO、TraCI、Vissim</dd></dl>
+      </section>
+
+      <section aria-labelledby="contact-heading" class="last-section">
+        <h2 id="contact-heading">联系我 <span lang="en">Contact</span></h2>
+        <dl class="details"><dt>邮箱</dt><dd><a href="mailto:24120884@bjtu.edu.cn">24120884@bjtu.edu.cn</a></dd><dt>GitHub</dt><dd><a href="https://github.com/July-yh" target="_blank" rel="noopener noreferrer">July-yh</a></dd></dl>
+      </section>
+
+      <footer><span>更新于 2026 年 11 月</span><a href="#content">返回顶部</a></footer>
     </main>
   </body>
 </html>

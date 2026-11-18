@@ -1,10 +1,10 @@
-# 个人网站 / Personal Space
+# 赵一红 / Yihong Zhao
 
-一个面向学术与项目展示的简约个人网站。页面位于 `dist/`，无需安装依赖。设计参考了 [jay-waves.cn](https://jay-waves.cn/) 的学术简历式布局，代码、图像和文案独立编写。
+赵一红 / Yihong Zhao 的双语学术网站。中文版为 `dist/index.html`，英文版为 `dist/en/index.html`。设计参考了 [jay-waves.cn](https://jay-waves.cn/) 的简约学术主页布局，页面代码与文案独立编写。
 
 ## 本地预览
 
-在仓库根目录运行静态文件服务器并访问 `dist/`。例如：
+在仓库根目录运行静态文件服务器，访问 `/` 查看中文版、`/en/` 查看英文版。例如：
 
 ```bash
 python3 -m http.server 8765 --directory dist
@@ -12,10 +12,8 @@ python3 -m http.server 8765 --directory dist
 
 ## 更新个人资料
 
-编辑 `dist/site-config.js` 中的姓名、介绍、研究方向、经历、写作、所在地、邮箱和 GitHub 用户名。留空的资料会在页面中显示为待补充；GitHub 用户名已设为 `July-yh`。
-
-页面通过 [GitHub 公开 API](https://docs.github.com/en/rest/repos/repos#list-repositories-for-a-user) 读取公开仓库，不需要令牌。GitHub 未响应时，页面会显示提示，其他内容仍可浏览。
+直接编辑两份 HTML 页面即可更新资料。两页共用 `dist/styles.css`。头像位使用姓名缩写；页面展示学术邮箱和 GitHub 链接，不公开简历中的手机号或证件照。
 
 ## 部署
 
-`.openai/hosting.json` 是 Sites 的部署配置，静态站点目录为 `dist/`。该仓库保存网站源码；GitHub 仓库的存在本身不会改变网站的访问权限。
+`.openai/hosting.json` 是 Sites 的部署配置，静态站点目录为 `dist/`。该仓库保存网站源码；网站的公开访问权限在 Sites 中单独设置。
