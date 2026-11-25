@@ -18,4 +18,6 @@ python3 -m http.server 8765 --directory dist
 
 ## 部署
 
-`.openai/hosting.json` 是 Sites 的部署配置，静态站点目录为 `dist/`。该仓库保存网站源码；网站的公开访问权限在 Sites 中单独设置。
+网站源文件在 `dist/`。GitHub Actions 工作流 `.github/workflows/deploy-pages.yml` 在每次推送到 `main` 后将该目录发布到 GitHub Pages，默认地址为 `https://july-yh.github.io/personality/`。
+
+若使用自有域名，在仓库 Settings → Pages 中设置 Custom domain，再到域名注册商配置 DNS。`.openai/hosting.json` 保留原 Sites 站点配置。
