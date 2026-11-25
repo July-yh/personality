@@ -38,6 +38,7 @@ section>p{max-width:66ch}
 .timeline time{white-space:nowrap;color:#666;font-size:.92rem;font-variant-numeric:tabular-nums}
 .timeline h3{font-size:1rem;font-weight:700;line-height:1.5}
 .timeline p{font-size:.94rem;color:#606060;line-height:1.65;margin-top:3px}
+.timeline .education-awards{font-size:.88rem;color:#666;margin-top:4px}
 .timeline .subtle{font-size:.86rem;color:#818181;margin-top:1px}
 .experience-aside-title{font-size:.92rem;font-weight:700;line-height:1.5;color:#777;margin:24px 0 11px}
 .projects{gap:24px}
