@@ -14,7 +14,7 @@ python3 -m http.server 8765 --directory dist
 
 直接编辑两份 HTML 页面即可更新资料。两页共用 `dist/styles.css`。头像位使用姓名缩写；页面展示学术邮箱和 GitHub 链接。
 
-项目代码公开后，可把“研究与项目”中的项目标题改为指向对应 GitHub 仓库的链接。
+中英文页面的“研究与项目”标题链接到各自的 GitHub 仓库。
 
 ## 部署
 
